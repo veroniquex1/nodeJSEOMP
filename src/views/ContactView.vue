@@ -1,6 +1,5 @@
 <template>
     <div class="contact-form">
-        <h1>Let's get in touch!</h1>
         <div class="container">
             <div class="main">
                 <div class="content">
@@ -23,7 +22,7 @@
                 </form>
                 </div>
                 <div class="form-img">
-                    <img src="" class="rotate" alt="placeholder">
+                    <img src="https://iili.io/JGNmo1S.png" class="rotate" alt="placeholder">
                 <div class="form-text">
                     <p>
                         <i class="bi bi-whatsapp"> +27 79 866 6734</i><br>
@@ -55,13 +54,11 @@
 
 <style scoped>
 .contact-form {
-    background-image: url('https://iili.io/JGjLeBn.md.jpg');
+    background-image: url('https://iili.io/JGNbxRa.md.png');
     justify-content: center;
-    display: grid;
     grid-template-rows: 1fr auto 1fr;
+    display: flex;
     align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .container {
     margin-top: 0 auto;
@@ -92,7 +89,6 @@ h2 {
     flex-basis: 50%;
     padding: 3em 3em;
     background: #fff;
-    box-shadow: 2px 9px 49px -17px;
 }
 .form-img {
     flex-basis: 50%;

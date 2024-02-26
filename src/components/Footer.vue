@@ -25,7 +25,4 @@
   display: flex;
   justify-content: center;
 }
-.femme {
-  
-}
 </style>
