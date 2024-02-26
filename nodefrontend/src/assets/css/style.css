@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: "Palanquin", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
