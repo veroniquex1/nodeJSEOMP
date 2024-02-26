@@ -1,17 +1,31 @@
 <template>
-    <NavBar></NavBar>
-    <router-view/>
-    <Footer></Footer>
+  <div class="container">
+      <div class="row">
+          <p class="footer">BLUE<span class="femme">femme</span> &copy; <span>{{ currYear }}</span></p>
+      </div>
+  </div>
 </template>
-  
+
 <script>
-import NavBar from './components/NavBar.vue'
-import Footer from './components/Footer.vue'
-  
   export default {
-    components: {
-      NavBar,
-      Footer
-    }
+      name: 'FooterComp',
+      data() {
+          return {
+              currYear: new Date().getFullYear()
+          }
+      }
   }
-</script>  
+</script>
+
+<style scoped>
+
+.footer {
+  padding-top: 10px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.femme {
+  
+}
+</style>
