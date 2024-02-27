@@ -4,7 +4,7 @@
             <div class="main">
                 <div class="content">
                     <h2>Contact Us</h2>
-                <form action="https://formspree.io/f/xdoqknke" method="post">
+                <form action="https://formspree.io/f/myyrjdgo" method="post">
 
                 <label for="exampleFormControlInput1" class="form-label">Name</label>
                 <input type="text" required class="form-control" id="exampleFormControlInput1">
@@ -25,19 +25,7 @@
                     <img src="https://iili.io/JGNmo1S.png" class="rotate" alt="placeholder">
                 <div class="form-text">
                     <p>
-                        <i class="bi bi-whatsapp"> +27 79 866 6734</i><br>
-                        <i class="bi bi-whatsapp"> +27 65 944 7142</i>
-                    </p>
-                    <p>
                         <i class="bi bi-house"> Lansdowne, Cape Town</i>
-                    </p>
-                    <p>
-                        <i class="bi bi-instagram"><a href="https://www.instagram.com/_aakeefahjones_/" target="_blank"> _aakeefahjones_</a></i><br>
-                        <i class="bi bi-instagram"><a href="https://www.instagram.com/_vdrossouw" target="_blank"> _vdrossouw</a></i>
-                    </p>
-                    <p>
-                        <i class="bi bi-github"><a href="https://github.com/keeefles" target="_blank"> @keeefles</a></i><br>
-                        <i class="bi bi-github"><a href="https://github.com/veroniquex1" target="_blank"> @veroniquex1</a></i>
                     </p>
                     </div>
                 </div>
