@@ -19,7 +19,7 @@
         </ul>
       </div>
       <div class="col 18 m24 s12">
-        <h2 class="h6" js-footer="toggle">Aakeefah</h2>
+        <h2 class="h6" js-footer="toggle">Contact Aakeefah:</h2>
         <ul js-footer="menu">
           <li>
             <i class="bi bi-whatsapp"> +27 79 866 6734</i>
@@ -33,7 +33,7 @@
         </ul>
       </div>
       <div class="col 18 m24 s12">
-        <h2 class="h6" js-footer="toggle">Veronique</h2>
+        <h2 class="h6" js-footer="toggle">Contact Veronique:</h2>
         <ul js-footer="menu">
           <li>
             <i class="bi bi-whatsapp"> +27 65 944 7142</i>
@@ -83,5 +83,19 @@ a {
   bottom: 0;
   display: flex;
   justify-content: center;
+}
+.container {
+  font-size: small;
+}
+@media(max-width:349px) {
+  ul {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    padding-top: 15px;
+  }
 }
 </style>

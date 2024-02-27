@@ -36,12 +36,7 @@
                     <router-link to="/contact" a class="nav-link">
                         CONTACT
                       </router-link>
-                    </li>  
-                    <li class="nav-item">
-                        <router-link to="/register" a class="nav-link">
-                          REGISTER
-                        </router-link>
-                    </li>
+                  </li>
         </ul>
       </div>
     </div>
@@ -94,10 +89,12 @@
   .nav-item a:hover{
     font-weight: bold;
     color: #4E96D3;
+    padding: 6px;
   }
   .nav-item a.router-link-exact-active {
     color: #4E96D3;
     border-radius: 25px;
     box-shadow: 0px 0px 20px 0px #4E96D3;
+    padding: 6px;
   }
   </style>

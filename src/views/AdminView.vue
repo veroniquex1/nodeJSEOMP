@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>This is the admin page.</h2>
+        <br><h2>This is the admin page.</h2><br>
         <table class="table">
   <thead class="table-dark">
     <tr>
@@ -33,5 +33,13 @@
 </script>
 
 <style scoped>
-
+td {
+  padding: 10px;
+}
+@media(max-width:351px){
+  td {
+    padding: 20px;
+    display: grid;
+  }
+}
 </style>

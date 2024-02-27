@@ -120,5 +120,11 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+  .p-3 {
+    margin: 0;
+  }
+  .aboutCont {
+    padding: 20px;
+  }
 }
 </style>

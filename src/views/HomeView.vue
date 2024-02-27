@@ -72,4 +72,10 @@ a {
   padding-right: 100px;
   font-size: large;
 }
+@media(max-width:351px){
+  .shortDesc {
+    padding: 20px;
+    text-align: center;
+  }
+}
 </style>
