@@ -68,7 +68,6 @@
 li {
   text-decoration: none;
   display: list-item;
-  text-align: -webkit-match-parent;
 }
 ul {
   list-style: none;
