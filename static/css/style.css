@@ -1,0 +1,22 @@
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.generalTable{
+    border: solid black 2px;
+    /* display: flex; */
+
+
+}
+
+h3 {
+    padding: 2%;
+}
+
+tbody, td{
+    padding: 1%;
+}
