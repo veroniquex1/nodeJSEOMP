@@ -5,16 +5,16 @@
         <h2 class="h6" js-footer="toggle">About Us:</h2>
         <ul js-footer="menu">
           <li>
-            <a href="">Meet the team</a>
+            <a href="/about">Meet the team</a>
           </li>
           <li>
-            <a href="">Benefits</a>
+            <a href="/about">Benefits</a>
           </li>
           <li>
-            <a href="">Where we are located</a>
+            <a href="/contact">Where we are located</a>
           </li>
           <li>
-            <a href="/about">Our Careers</a>
+            <a href="/contact">Work With Us</a>
           </li>
         </ul>
       </div>
