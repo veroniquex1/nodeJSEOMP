@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="col 18 m24 s12 row links">
-      <div class="col 18 m24 s12">
+    <div class="col row links">
+      <div class="col">
         <h2 class="h6" js-footer="toggle">About Us:</h2>
         <ul js-footer="menu">
           <li>
@@ -18,7 +18,7 @@
           </li>
         </ul>
       </div>
-      <div class="col 18 m24 s12">
+      <div class="col">
         <h2 class="h6" js-footer="toggle">Contact Aakeefah:</h2>
         <ul js-footer="menu">
           <li>
@@ -32,7 +32,7 @@
           </li>
         </ul>
       </div>
-      <div class="col 18 m24 s12">
+      <div class="col">
         <h2 class="h6" js-footer="toggle">Contact Veronique:</h2>
         <ul js-footer="menu">
           <li>
@@ -68,6 +68,9 @@
 li {
   text-decoration: none;
   display: list-item;
+}
+.col {
+  width: auto;
 }
 ul {
   list-style: none;
