@@ -3,13 +3,19 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://iili.io/JGaywc7.md.jpg" class="d-block" alt="carousel image">
+      <img src="https://iili.io/JGt3TW7.md.jpg" class="lingerie" alt="carousel image">
+      <img src="https://iili.io/JGt3hga.md.jpg" class="lingerie" alt="carousel image">
+      <img src="https://iili.io/JGt3tXS.md.jpg" class="lingerie" alt="carousel image">
     </div>
     <div class="carousel-item">
-      <img src="https://iili.io/JGc9zU7.md.jpg" class="d-block" alt="carousel image">
+      <img src="https://iili.io/JGtFJ7j.md.jpg" class="lingerie" alt="carousel image">
+      <img src="https://iili.io/JGtFBB1.md.jpg" class="lingerie" alt="carousel image">
+      <img src="https://iili.io/JGtFIkv.md.jpg" class="lingerie" alt="carousel image">
     </div>
     <div class="carousel-item">
-      <img src="https://iili.io/JGc9VOg.md.jpg" class="d-block" alt="carousel image">
+      <img src="https://iili.io/JGt38XI.md.jpg" class="lingerie" alt="carousel image">
+      <img src="https://iili.io/JGtF5QI.md.jpg" class="lingerie" alt="carousel image">
+      <img src="https://iili.io/JGtFaEX.jpg" class="lingerie" alt="carousel image">
     </div>
   </div>
 </div>
@@ -43,6 +49,10 @@ export default {
 template {
   font-family: "Palanquin", sans-serif;
 }
+/* .carousel-item {
+  display: flexbox;
+  justify-content: ;
+} */
 .buttons {
   width: 100%;
   display: flex;
