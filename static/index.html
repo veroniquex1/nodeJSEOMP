@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <h1>User and Products End Points</h1>
+    <table class="generalTable">
+        <caption>
+            <h3>
+                General Routing
+            </h3>
+        </caption>
+        <thread>
+            <th>Path</th>
+            <th>HTTP Methods</th>
+            <th>Description</th>
+        </thread>
+        <tbody>
+            <tr>
+                <td>/</td>
+                <td>GET</td>
+                <td>To display the home page</td>
+            </tr>
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="userTable">
+        <caption>
+            <h3>
+                User Routing
+            </h3>
+        </caption>
+        <thread>
+            <th>Path</th>
+            <th>HTTP methods</th>
+            <th>Description</th>
+        </thread>
+        <tbody>
+            <tr>
+                <td>/users/</td>
+                <td>GET</td>
+                <td>Display all users</td>
+            </tr>
+            <tr>
+                <td>/users/register</td>
+                <td>POST</td>
+                <td>Register a new user</td>
+            </tr>
+            <tr>
+                <td>/users/:id</td>
+                <td>GET</td>
+                <td>Retrieve one user</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table class="productTable">
+        <caption>
+            <h3>
+                Product Routing
+            </h3>
+        </caption>
+        <thread>
+            <th>Path</th>
+            <th>HTTP methods</th>
+            <th>Description</th>
+        </thread>
+        <tbody>
+            <tr>
+                <td>/products/</td>
+                <td>GET</td>
+                <td>Display all products</td>
+            </tr>
+            <tr>
+                <td>/products/addProduct</td>
+                <td>POST</td>
+                <td>To add a new product</td>
+            </tr>
+            <tr>
+                <td>/products/:id</td>
+                <td>GET</td>
+                <td>Retrieve a single product</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
