@@ -5,8 +5,8 @@ import {
 class Products {
     fetchProducts(req, res) {
         const dbQry = `
-        SELECT prodID, prodName, prodQuantity,
-        prodAmount, userID
+        SELECT prodID, prodName, quantity,
+        amount, userID
         FROM products;
         `
         bf_connection.query(dbQry, (error, results) => {
@@ -19,8 +19,8 @@ class Products {
     }
     fetchProduct(req, res) {
         const dbQry = `
-        SELECT prodID, prodName, prodQuantity,
-        prodAmount, userID
+        SELECT prodID, prodName, quantity,
+        amount, userID
         FROM products
         WHERE prodID = ${req.params.id};
         `
@@ -34,7 +34,7 @@ class Products {
     }
     addProduct(req, res) {
         const dbQry = `
-        INSERT INTO Products
+        INSERT INTO products
         SET ?;
         `
         bf_connection.query(dbQry, [req.body], (error) => {

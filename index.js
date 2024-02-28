@@ -38,5 +38,5 @@ app.use('/users', userRouter)
 app.use('/products', productRouter)
 app.use(errorHandling)
 app.listen(port, () => {
-    console.log(`Server is running on port https://localhost${port}`);
+    console.log(`Server is running on port https://localhost:${port}`);
 })
