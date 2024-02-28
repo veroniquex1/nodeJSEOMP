@@ -14,7 +14,7 @@
   </thead>
   <tbody>
     <tr>
-        <td></td>
+        <td>product.name</td>
         <td></td>
         <td></td>
         <td></td>
