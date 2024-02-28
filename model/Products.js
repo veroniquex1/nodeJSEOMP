@@ -1,6 +1,6 @@
 import {
     bf_connection
-} from "../config/index"
+} from "../config/index.js"
 
 class Products {
     fetchProducts(req, res) {
