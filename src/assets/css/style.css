@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Lora&family=Open+Sans&family=Parisienne&family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&family=Playfair+Display&display=swap');
 
 *,
 *::after,
@@ -9,10 +11,16 @@
 }
 
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    font-family: "Palanquin", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
+  font-family: 'Bodoni Moda', serif;
+  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Parisienne', cursive;
+  font-family: 'Salsa', cursive;
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: "Palanquin", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
   }
