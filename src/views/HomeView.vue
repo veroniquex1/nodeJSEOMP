@@ -3,19 +3,19 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://iili.io/JGt3TW7.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
-      <img src="https://iili.io/JGt3hga.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
-      <img src="https://iili.io/JGt3tXS.md.jpg"  class="lingerie d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGt3TW7.md.jpg" class="d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGt3hga.md.jpg" class="d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGt3tXS.md.jpg"  class="d-lg-inline-block" alt="carousel image">
     </div>
     <div class="carousel-item">
-      <img src="https://iili.io/JGtFJ7j.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
-      <img src="https://iili.io/JGtFBB1.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
-      <img src="https://iili.io/JGtFIkv.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGtFJ7j.md.jpg" class="d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGtFBB1.md.jpg" class="d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGtFIkv.md.jpg" class="d-lg-inline-block" alt="carousel image">
     </div>
     <div class="carousel-item">
-      <img src="https://iili.io/JGt38XI.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
-      <img src="https://iili.io/JGtF5QI.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
-      <img src="https://iili.io/JGtFaEX.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGt38XI.md.jpg" class="d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGtF5QI.md.jpg" class="d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGtFaEX.jpg" class="d-lg-inline-block" alt="carousel image">
     </div>
   </div>
 </div>
@@ -48,24 +48,43 @@ export default {
 body {
   font-family: "Palanquin", sans-serif;
 }
+.palanquin-thin {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.home {
+  margin: 20px 0px;
+}
 .buttons {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
-.btn {  
+.btn {
   border-radius: 30px;
   color: #000;
   padding: 10px;
   margin: 10px;
+  background-color: #4e96d3;
   font-size: 12px;
   border: none;
   cursor: pointer;
   transition: .4s;
-  background-color: #d6c7c7;
+}
+.btn:hover{
+  background-color: #1d3557;
+  color: #fff;
+  transition: 1s;
+  padding: 10px;
+  font-size: small;
+  margin: 10px;
 }
 .shortDesc {
   color: black;

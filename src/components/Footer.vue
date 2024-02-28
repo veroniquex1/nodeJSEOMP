@@ -70,7 +70,8 @@ li {
   display: list-item;
 }
 .col {
-  width: auto;
+  display: flex;
+  justify-content: center;
 }
 ul {
   list-style: none;
