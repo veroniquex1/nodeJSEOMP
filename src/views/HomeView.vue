@@ -5,7 +5,7 @@
     <div class="carousel-item active">
       <img src="https://iili.io/JGt3TW7.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
       <img src="https://iili.io/JGt3hga.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
-      <img src="https://iili.io/JGt3tXS.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
+      <img src="https://iili.io/JGt3tXS.md.jpg"  class="lingerie d-lg-inline-block" alt="carousel image">
     </div>
     <div class="carousel-item">
       <img src="https://iili.io/JGtFJ7j.md.jpg" class="lingerie d-lg-inline-block" alt="carousel image">
@@ -45,8 +45,7 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
-
-template {
+body {
   font-family: "Palanquin", sans-serif;
 }
 .buttons {
