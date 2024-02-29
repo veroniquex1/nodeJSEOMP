@@ -6,7 +6,7 @@ class Products {
     fetchProducts(req, res) {
         const dbQry = `
         SELECT prodID, prodName, quantity,
-        amount, Category, prodURL
+        amount, Category, prodURL, prodDesc
         FROM Products;
         `
         bf_connection.query(dbQry, (error, results) => {
@@ -20,7 +20,7 @@ class Products {
     fetchProduct(req, res) {
         const dbQry = `
         SELECT prodID, prodName, quantity,
-        amount, Category, prodURL
+        amount, Category, prodURL, prodDesc
         FROM Products
         WHERE prodID = ${req.params.id};
         `
