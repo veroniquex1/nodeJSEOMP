@@ -58,11 +58,15 @@
         }
       }
     }, methods: {
-      addProduct() {
-      this.$store.dispatch('addProduct', this.payload)
+      async addProduct() {
+        try {
+          await this.$store.dispatch('addProduct', this.payload)
+        } catch (e) {
+      console.error(e)
     }
+    window.location.reload()
   } 
-}
+}}
     </script>
     
     <style scoped>
