@@ -112,18 +112,16 @@ export default createStore({
           })
         }
       },
-      async deleteUser(context, payload) {
+      async deleteUser({commit, dispatch}, payload) {
         try{
-          let {msg} = await axios.delete(`${blueURL}users/${payload.id}`)
-          if(msg) {
-            context.dispatch('fetchUsers')
+          await axios.delete(`${blueURL}users/delete/${payload.id}`)
+            commit('setUsers');
+            dispatch('fetchUsers')
             sweet({
               title: 'Delete user',
-              text: msg,
               icon: "success",
               timer: 2000
             })
-          }
         }catch(e) {
           sweet({
             title: 'Error',
@@ -204,6 +202,47 @@ export default createStore({
             timer: 2000
           })
         }
+      }
+    },
+    async deleteProduct({commit, dispatch}, payload) {
+      try{
+        await axios.delete(`${blueURL}products/delete/${payload.id}`)
+          commit('setProducts');
+          dispatch('fetchProducts')
+          sweet({
+            title: 'Delete product',
+            icon: "success",
+            timer: 2000
+          })
+      }catch(e) {
+        sweet({
+          title: 'Error',
+          text: 'An error occurred when deleting a product.',
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async addProduct(context, payload) {
+      try{
+        let {msg} = (await axios.post(`${blueURL}products/addProduct`, payload))
+        if(msg) {
+          context.dispatch('setProducts')
+          sweet({
+            title: 'Registration',
+            text: msg,
+            icon: "success",
+            timer: 2000
+          })
+
+        }
+      }catch(e) {
+        sweet({
+          title: 'Error',
+          text: 'Please try again later',
+          icon: "error",
+          timer: 2000
+        })
       }
     },
     modules: {

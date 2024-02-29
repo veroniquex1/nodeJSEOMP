@@ -17,10 +17,10 @@
                   
                   <img :src= "product.prodURL" alt="lingerie">
                   <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
-                      Description: {{ product.prodDesc }}
+                      {{ product.prodDesc }}
                   </p>
                   <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
-                      Price: R{{ product.amount }}
+                      R{{ product.amount }}
                   </p>
                   <router-link :to="{name: 'prod', params: {id: product.prodID}}">View More</router-link>
               </template>
@@ -53,6 +53,7 @@ export default {
 <style scoped>
 img{
   width: 200px;
+  aspect-ratio: 1/1.25;
 }
 .btn {
   border-radius: 30px;
