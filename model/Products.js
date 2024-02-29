@@ -59,7 +59,19 @@ class Products {
             })
         })
     }
+    productRouter.delete('/delete/:id', (req, res) => {
+        try {
+            products.deleteProduct(req, res)
+        } catch (error) {
+            res.json({
+                status: res.errorCode,
+                message: "Product not deleted. Please try again."
+            })
+        }
+    })
 }
+
+
 
 export {
     Products
