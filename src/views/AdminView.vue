@@ -1,8 +1,9 @@
 <template>
     <div>
         <br><h2>This is the admin page.</h2><br>
-        <table class="table">
-  <thead class="table-dark">
+          <div class="container">
+             <table class="table">
+              <thead class="table-dark">
     <tr>
         <td>Name</td>
         <td>Product</td>
@@ -23,6 +24,8 @@
     </tr>
   </tbody>
 </table>
+          </div>
+ 
     </div>
 </template>
 
@@ -39,7 +42,6 @@ td {
 @media(max-width:351px){
   td {
     padding: 20px;
-    display: grid;
   }
 }
 </style>

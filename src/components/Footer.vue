@@ -68,6 +68,7 @@
 li {
   text-decoration: none;
   display: list-item;
+  text-align: left;
 }
 .col {
   display: flex;
