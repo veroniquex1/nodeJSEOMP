@@ -1,34 +1,46 @@
 <!-- placeholder -->
 
 <template>
-    <button type="button" class="btn modalButton" data-bs-toggle="modal" data-bs-target="#updateProductModal">
-      Update Product
+    <button type="button" class="btn modalButton" data-bs-toggle="modal" data-bs-target="#updateUserModal">
+      Update User
     </button>
   
     <!-- Modal -->
-    <div class="modal fade" id="updateProductModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="updateUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Update Details</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Update Users</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form @submit.prevent="updateProduct">
+            <form @submit.prevent="updateUser">
               <div class="mb-3">
-                <input type="text" class="form-control w-50 mx-auto" placeholder="Product ID" v-model="payload.prodID">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="user ID" v-model="payload.userID">
               </div>
               <div class="mb-3">
-                <input type="text" class="form-control w-50 mx-auto" placeholder="Product Name" v-model="payload.prodName">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="first name" v-model="payload.firstName">
               </div>
               <div class="mb-3">
-                <input type="text" class="form-control w-50 mx-auto" placeholder="Product Image" v-model="payload.prodImage">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="last name" v-model="payload.lastName">
               </div>
               <div class="mb-3">
-                <input type="text" class="form-control w-50 mx-auto" placeholder="Product Description" v-model="payload.prodDesc">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="user age" v-model="payload.userAge">
               </div>
               <div class="mb-3">
-                <input type="text" class="form-control w-50 mx-auto" placeholder="Product Price" v-model="payload.prodPrice">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="gender" v-model="payload.Gender">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="user role" v-model="payload.userRole">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="email address" v-model="payload.emailAdd">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="user password" v-model="payload.userPass">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="user profile" v-model="payload.userProfile">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -43,21 +55,25 @@
   
   <script>
   export default {
-    name: 'UpdateProduct',
+    name: 'UpdateUser',
     data() {
       return {
         payload: {
-          prodID: '',
-          prodName: '',
-          prodImage: '',
-          prodDesc: '',
-          prodPrice: ''
+          userID: '',
+          firstName: '',
+          lastName: '',
+          userAge: '',
+          Gender: '',
+          userRole: '',
+          emailAdd: '',
+          userPass: '',
+          userProfile: ''
         }
       }
     },
     methods: {
-      updateProduct() {
-        this.$store.dispatch('updateProduct', {id: this.payload.prodID, data: this.payload});
+      updateUser() {
+        this.$store.dispatch('updateUser', {id: this.payload.userID, data: this.payload});
         window.location.reload()
       }
     }

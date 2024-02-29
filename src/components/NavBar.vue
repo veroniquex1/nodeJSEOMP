@@ -1,6 +1,6 @@
 <template>
     <div>
-      <p class="headBar">FREE SHIPPING ON ORDERS OVER R800</p>
+      <p class="headBar">FREE SHIPPING ON ORDERS OVER R500</p>
     </div>
     <div class="femmeLogo">
       <img src="https://iili.io/JGaP6WF.png" alt="JGzmSLb.png">
