@@ -15,10 +15,7 @@
               </template>
               <template #card-body>
                   
-                  <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
-                      <!-- <img :src="product.prodURL" alt="lingerie"> -->
-                      {{ product.prodURL }}
-                  </p>
+                  <img :src= "product.prodURL" alt="lingerie">
                   <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
                       Description: {{ product.prodDesc }}
                   </p>

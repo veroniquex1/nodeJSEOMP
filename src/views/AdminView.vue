@@ -19,16 +19,17 @@
         </tr>
       </thead>
     <tbody v-if="users">
-  <tr :key="user.userID">
-      <td>{{ user }}</td>
-      <td>{{ user }}</td>
-      <td>{{ user }}</td>
-      <td>{{ user }}</td>
-      <td>{{ user }}</td>
-      <td>{{ user }}</td>
-      <td>{{ user }}</td>
+  <tr v-for="user in users" :key="user.userID">
+      <td>{{ user.firstName }}</td>
+      <td>{{ user.lastName }}</td>
+      <td>{{ user.userAge }}</td>
+      <td>{{ user.Gender }}</td>
+      <td>{{ user.userRole }}</td>
+      <td>{{ user.emailAdd }}</td>
+      <td>{{ user.userProfile }}</td>
       <td class="d-flex justify-content-between">
         <updateUser :user="user" />
+        <button class="btn btn-success deleteButton" @click="event => deleteUser(user.userID)">Delete</button>
         <button class="btn btn-success deleteButton" @click="event => deleteUser(user.userID)">Delete</button>
       </td>
     </tr>
@@ -55,13 +56,13 @@
       <tr v-for="product in products" :key="product.prodID">
           <td>{{ product.prodID }}</td>
           <td>{{ product.prodName }}</td>
-          <td>{{ product.prodImage }}</td>
-          <td>{{ product.prodDescription }}</td>
-          <td>R {{ product.prodPrice }}</td>
+          <td>{{ product.prodURL }}</td>
+          <td>{{ product.prodDesc }}</td>
+          <td>R {{ product.amount }}</td>
           <td class="d-flex justify-content-between">
               <updateProduct :product="product"/>
-              <button class="btn btn-success deleteButton"
-                  @click="event => deleteProduct(product.prodID)">Delete</button>
+              <button class="btn btn-success deleteButton" @click="event => deleteProduct(product.prodID)">Delete</button>
+              <button class="btn btn-success deleteButton" @click="event => deleteProduct(product.prodID)">Delete</button>
           </td>
       </tr>
     </tbody>
@@ -72,7 +73,18 @@
 
 <script>
     export default {
-        
+      computed: {
+        products(){
+          return this.$store.state.products
+      },
+        users(){
+          return this.$store.state.users
+      }
+      },
+      mounted() {
+      this.$store.dispatch('fetchProducts'),
+      this.$store.dispatch('fetchUsers')
+  }
     }
 </script>
 
@@ -85,4 +97,18 @@ td {
     padding: 20px;
   }
 }
+/* .btn {
+  border-radius: 30px;
+  color: #fff;
+  background-color: #4E96D3;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  transition: .4s;
+}
+.btn:hover{
+  background-color: #1d3557;
+  color: #fff;
+  transition: 1s;
+} */
 </style>
