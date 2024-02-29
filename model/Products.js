@@ -59,19 +59,20 @@ class Products {
             })
         })
     }
-    productRouter.delete('/delete/:id', (req, res) => {
-        try {
-            products.deleteProduct(req, res)
-        } catch (error) {
+    deleteProduct(req, res) {
+        const qry = `
+        DELETE FROM Products
+        WHERE prodID = ${req.params.id};
+        `
+        bf_connection.query(dbQry, (error) => {
+            if (error) throw error
             res.json({
-                status: res.errorCode,
-                message: "Product not deleted. Please try again."
+                status: res.statusCode,
+                message: "Product successfully deleted."
             })
+        })
         }
-    })
 }
-
-
 
 export {
     Products
