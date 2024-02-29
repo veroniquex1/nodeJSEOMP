@@ -21,8 +21,8 @@
   <!-- end of team members -->
 <div class="aboutCont">
   <h2 id="heading">about us</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam illo accusantium accusamus itaque nisi culpa adipisci quidem. Quae, assumenda. Omnis ducimus quis reiciendis odio, voluptas eius temporibus harum eligendi.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illum quae, similique maiores quisquam recusandae tempore autem dolor, sed unde harum. Exercitationem nesciunt maxime tenetur eligendi totam aliquam quod veniam.</p>
+  <p>Indulge in the luxury of exquisite lingerie that celebrates your unique beauty and empowers your confidence. At BlueFemme, we offer more than just lingerie; we offer a transformative experience.</p>
+   
 
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, excepturi non? Repellendus placeat fugiat dolore in perspiciatis ipsa quos suscipit cupiditate ut, ratione nesciunt enim adipisci sint at incidunt hic.
   Sunt alias in maxime quis quaerat rerum suscipit, amet nisi nesciunt sit perspiciatis fugiat omnis tempore laboriosam, modi quasi impedit sint eos nemo pariatur quibusdam mollitia. Voluptate sapiente iusto facilis?

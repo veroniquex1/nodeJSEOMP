@@ -23,10 +23,9 @@
 <!-- end of carousel -->
 <!-- content begins -->
 <div class="aboutSum">
-  <p class="shortDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab reprehenderit fugiat molestias, nulla unde iure impedit error aut odio ullam necessitatibus reiciendis quis, animi odit sunt repudiandae quam non aliquam.
-  Ad quam perferendis dolores maxime voluptatibus, recusandae officiis ratione quas explicabo debitis suscipit perspiciatis, quibusdam harum temporibus possimus beatae sequi? Tempora veritatis voluptatum modi corporis, dolores impedit nam. Ab, tempora!
-  Assumenda distinctio iure omnis quos unde explicabo perferendis deserunt vitae! Placeat, eum, rerum doloribus iste, veniam voluptatibus a numquam praesentium quibusdam aliquam necessitatibus. Dicta deserunt facilis modi optio rem accusantium?
-  </p>
+  <p class="shortDesc">From delicate lace to sumptuous silk, our collection boasts a stunning array of styles and designs to suit every taste and occasion. Experience the perfect blend of comfort and allure with our carefully curated selection of lingerie crafted from the finest materials.
+  Whether it's a special night or just a moment for yourself, ignite the flames of passion with lingerie that speaks to your desires.
+  Celebrate your femininity with pieces that accentuate your curves and make you feel absolutely irresistible.</p>
 </div>
   <div class="buttons">
     <button class="btn"><a href="/products">Get shopping</a></button>
@@ -47,11 +46,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
 body {
   font-family: "Palanquin", sans-serif;
-}
-.palanquin-thin {
-  font-family: "Palanquin", sans-serif;
-  font-weight: 100;
-  font-style: normal;
 }
 .home {
   margin: 20px 0px;
