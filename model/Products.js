@@ -60,7 +60,7 @@ class Products {
         })
     }
     deleteProduct(req, res) {
-        const qry = `
+        const dbQry = `
         DELETE FROM Products
         WHERE prodID = ${req.params.id};
         `
