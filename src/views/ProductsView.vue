@@ -1,31 +1,62 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <h1>Products</h1>
-        </div>
-        <div class="card-deck">
-          <div class="card">
-          <img class="card-img-top" src="" alt="product image">
-          <div class="card-body">
-            <h5 class="card-title">Product Name</h5>
-            <p class="card-text">R100</p>
-        <a class="btn" target="_blank"><i class="bi bi-cursor-fill">Read More</i></a>
+  <div class="container">
+      <div class="row">
+          <div class="col">
+              <input type="text" placeholder="Search product by name" class="form-control">
           </div>
+          <div class="col">
+              <button class="btn btn-success">Sorting by price</button>
           </div>
-        </div>
-    </div>
+      </div>
+      <div class="row" v-if="products">
+          <Card v-for="product in products" :key="product.prodID">
+              <template #card-header>
+                  <h4 class="card-title">{{ product.prodName }}</h4>
+              </template>
+              <template #card-body>
+                  
+                  <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
+                      <!-- <img :src="product.prodURL" alt="lingerie"> -->
+                      {{ product.prodURL }}
+                  </p>
+                  <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
+                      Description: {{ product.prodDesc }}
+                  </p>
+                  <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
+                      Price: R{{ product.amount }}
+                  </p>
+                  <router-link :to="{name: 'prod', params: {id: product.prodID}}">View More</router-link>
+              </template>
+          </Card>
+      </div>
+      <div class="row" v-else>
+          <p class="lead">Loading</p>
+      </div>
+  </div>
 </template>
 
 <script>
+import Card from '@/components/CardComp.vue';
 export default {
-    components: {
-
-    }
+  name: 'ProductsView',
+  components: {
+      Card
+  },
+  computed:{
+      products(){
+          return this.$store.state.products
+      }
+  },
+  mounted() {
+      this.$store.dispatch('fetchProducts')
+  }
 }
-
 </script>
 
 <style scoped>
+img{
+  width: 200px;
+}
 .btn {
   border-radius: 30px;
   color: #fff;
@@ -42,7 +73,7 @@ export default {
   padding: 10px;
   font-size: small;
 }
-.card-deck {
+/* .card-deck {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -64,5 +95,5 @@ export default {
   width: 18rem;
   display: flex;
   margin: auto;
-}
+} */
 </style>
