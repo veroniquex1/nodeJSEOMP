@@ -9,12 +9,12 @@ import {
     compare
 } from 'bcrypt'
 
-class Users{
+class Users {
     fetchUsers(req, res) {
         const dbQry = `
         SELECT userID, firstName, lastName,
-        userAge, gender, emailAdd, userPass, userRole
-        FROM users;
+        userAge, Gender, userRole, emailAdd, userPass, userProfile
+        FROM Users;
         `
         bf_connection.query(dbQry, (error, results) => {
             if (error) throw error
@@ -27,8 +27,8 @@ class Users{
     fetchUser(req, res) {
         const dbQry = `
         SELECT userID, firstName, lastName,
-        userAge, gender, emailAdd, userPass, userRole
-        FROM users
+        userAge, Gender, emailAdd, userPass, userRole
+        FROM Users
         WHERE userID = ${req.params.id};
         `
         bf_connection.query(dbQry, (error, result) => {
@@ -48,7 +48,7 @@ class Users{
             userPass: data.userPass
         }
         const dbQry = `
-        INSERT INTO users
+        INSERT INTO Users
         SET ?;
         `
         bf_connection.query(dbQry, [data], (error) => {
@@ -75,7 +75,7 @@ class Users{
         }
 
         const dbQry = `
-        UPDATE users
+        UPDATE Users
         SET ?
         WHERE userID = ${req.params.id};
         `
@@ -89,11 +89,11 @@ class Users{
     }
     deleteUser(req, res) {
         const dbQry = `
-        DELETE FROM users
+        DELETE FROM Users
         WHERE userID = ${req.params.id};
         `
         bf_connection.query(dbQry, (err) => {
-            if(error) throw error 
+            if (error) throw error
             res.json({
                 status: res.errorCode,
                 message: "User is successfully deleted"
@@ -106,9 +106,9 @@ class Users{
             userPass
         } = req.body
         const dbQry = `
-        SELECT userID, firstName, lastName, 
-        userAge, gender, emailAdd, userPass, userRole
-        FROM users
+        SELECT userID, firstName, lastName,
+        userAge, Gender, emailAdd, userPass, userRole
+        FROM Users
         WHERE emailAdd = '${emailAdd}';
         `
         bf_connection.query(dbQry, async (error, result) => {

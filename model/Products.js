@@ -6,8 +6,8 @@ class Products {
     fetchProducts(req, res) {
         const dbQry = `
         SELECT prodID, prodName, quantity,
-        amount, userID
-        FROM products;
+        amount, Category, prodURL
+        FROM Products;
         `
         bf_connection.query(dbQry, (error, results) => {
             if (error) throw error
@@ -20,8 +20,8 @@ class Products {
     fetchProduct(req, res) {
         const dbQry = `
         SELECT prodID, prodName, quantity,
-        amount, userID
-        FROM products
+        amount, Category, prodURL
+        FROM Products
         WHERE prodID = ${req.params.id};
         `
         bf_connection.query(dbQry, (error, result) => {
@@ -34,7 +34,7 @@ class Products {
     }
     addProduct(req, res) {
         const dbQry = `
-        INSERT INTO products
+        INSERT INTO Products
         SET ?;
         `
         bf_connection.query(dbQry, [req.body], (error) => {
@@ -47,7 +47,7 @@ class Products {
     }
     updateProduct(req, res) {
         const dbQry = `
-        UPDATE products
+        UPDATE Products
         SET ?
         WHERE prodID = ${req.params.id};
         `

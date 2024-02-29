@@ -1,8 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import {
-    Users
-} from "../model/Users.js"
+import {users} from "../model/index.js"
 import {
     verifyToken
 } from '../middleware/userAuthentication.js'
@@ -11,7 +9,7 @@ const userRouter = express.Router()
 
 userRouter.get('/', (req, res) => {
     try {
-        Users.fetchUsers(req, res)
+        users.fetchUsers(req, res)
     } catch (error) {
         res.json({
             status: res.errorCode,
@@ -21,7 +19,7 @@ userRouter.get('/', (req, res) => {
 })
 userRouter.get('/:id', (req, res) => {
     try {
-        Users.fetchUser(req, res)
+        users.fetchUser(req, res)
     } catch (error) {
         res.json({
             status: res.errorCode,
@@ -31,7 +29,7 @@ userRouter.get('/:id', (req, res) => {
 })
 userRouter.post('/register', bodyParser.json(), (req, res) => {
     try {
-        Users.createUser(req, res)
+        users.createUser(req, res)
     } catch (error) {
         res.json({
             status: res.errorCode,
@@ -42,7 +40,7 @@ userRouter.post('/register', bodyParser.json(), (req, res) => {
 userRouter.patch('/update/:id', bodyParser.json(),
     (req, res) => {
         try {
-            Users.updateUser(req, res)
+            users.updateUser(req, res)
         } catch (error) {
             res.json({
                 status: res.errorCode,
@@ -52,7 +50,7 @@ userRouter.patch('/update/:id', bodyParser.json(),
     })
 userRouter.delete('/delete/:id', (req, res) => {
     try {
-        Users.deleteUser(req, res)
+        users.deleteUser(req, res)
     } catch (error) {
         res.json({
             status: res.errorCode,
@@ -62,7 +60,7 @@ userRouter.delete('/delete/:id', (req, res) => {
 })
 userRouter.post('/login', bodyParser.json(), (req, res) => {
     try {
-        Users.login(req, res)
+        users.login(req, res)
     } catch (error) {
         res.json({
             status: res.errorCode,

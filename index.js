@@ -4,8 +4,8 @@ import { errorHandling } from './middleware/errorHandling.js'
 import cookieParser from 'cookie-parser';
 import path from 'path'
 import cors from 'cors'
-import { config } from "dotenv";
-config()
+// import { config } from "dotenv";
+// config()
 
 const app = express();
 // app.use(express.json());
@@ -38,5 +38,5 @@ app.use('/users', userRouter)
 app.use('/products', productRouter)
 app.use(errorHandling)
 app.listen(port, () => {
-    console.log(`Server is running on port https://localhost:${port}`);
+    console.log(`Server is running on port http://localhost:${port}`);
 })
