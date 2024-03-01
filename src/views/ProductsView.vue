@@ -27,7 +27,7 @@
           </Card>
       </div>
       <div class="row" v-else>
-          <p class="lead">Loading</p>
+          <p class="lead">Loading...</p>
       </div>
   </div>
 </template>
@@ -71,7 +71,7 @@ img{
   padding: 10px;
   font-size: small;
 }
-/* .card-deck {
+.card-deck {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -93,5 +93,5 @@ img{
   width: 18rem;
   display: flex;
   margin: auto;
-} */
+}
 </style>

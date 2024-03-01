@@ -1,8 +1,9 @@
 <template>
     <div>
 <!-- USERS TABLE -->
-  <br><h2>Users Table</h2><br>
-    <div class="container">
+<br><h2>Users Table</h2><br>
+<addUser/>
+    <div class="container table-responsive">
       <table class="table">
       <thead class="table-dark">
         <tr>
@@ -41,7 +42,7 @@
 <!-- PRODUCTS TABLE -->
 <br><h2>Products Table</h2><br>
 <addProduct/>
-    <div class="container">
+    <div class="container table-responsive">
       <table class="table">
       <thead class="table-dark">
         <tr>
@@ -81,12 +82,14 @@
 import updateUser from '@/components/UpdateUserModal.vue';
 import updateProduct from '@/components/UpdateProduct.vue';
 import addProduct from '@/components/AddProduct.vue';
+import addUser from '@/components/AddUser.vue';
 
     export default {
       components: {
         updateUser,
         updateProduct,
         addProduct,
+        addUser,
       },
       computed: {
         products(){
