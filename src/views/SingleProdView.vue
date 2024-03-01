@@ -3,23 +3,22 @@
 
        <div class="row" v-if="product">
         
-           <Card v-for="product in product" :key="product.prodID">
-            {{ product }}
+           <Card>
                <template #card-header>
                    <h4 class="card-title">{{ product.prodName }}</h4>
                </template>
                <template #card-body>
-                   <img :src="product.prodImg" :alt="`${ product.prodName }`">
+                   <img :src="product.prodURL" :alt="product.prodName">
                    <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
-                       Category: {{ product.prodCat }}
+                       Category: {{ product.Category }}
                    </p>
                    <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
-                       Quantity: {{ product.prodQuantity }}
+                       Quantity: {{ product.quantity }}
                    </p>
                    <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
-                       Amount: R{{ product.prodAmount }}
+                       Amount: R{{ product.amount }}
                    </p>
-                   <button class="pbutton" @click="Purchase">Purchase now</button>
+                   <button class="btn btn-success" @click="Purchase">Purchase now</button>
                </template>
            </Card>
        </div>
@@ -28,6 +27,7 @@
        </div>
    </div>
 </template>
+
 
 <script>
 import Card from '../components/CardComp.vue';

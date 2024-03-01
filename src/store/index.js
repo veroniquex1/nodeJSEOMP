@@ -184,10 +184,10 @@ export default createStore({
     },
     async fetchProduct(context, packet) {
       try {
-        let { result } = (await axios.get(`${blueURL}products/${packet.id}`))
+        let { result } = (await axios.get(`${blueURL}products/${packet?.id}`))
           .data;
         if (result) {
-          context.commit("setProduct", result[0]);
+          context.commit("setProduct", result);
         } else {
           sweet({
             title: "Retrieving a single product",
