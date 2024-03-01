@@ -21,10 +21,17 @@
   <!-- end of team members -->
 <div class="aboutCont">
   <h2 id="heading">about us</h2>
-  <p>Indulge in the luxury of exquisite lingerie that celebrates your unique beauty and empowers your confidence. At BlueFemme, we offer more than just lingerie; we offer a transformative experience.</p>
-  <p>From delicate lace to sumptuous silk, our collection boasts a stunning array of styles and designs to suit every taste and occasion. Experience the perfect blend of comfort and allure with our carefully curated selection of lingerie crafted from the finest materials.
+  <p>
+    Indulge in the luxury of exquisite lingerie that celebrates your unique beauty and empowers your confidence. At BlueFemme, we offer more than just lingerie; we offer a transformative experience.
+  </p>
+  <p>
+  From delicate lace to sumptuous silk, our collection boasts a stunning array of styles and designs to suit every taste and occasion. Experience the perfect blend of comfort and allure with our carefully curated selection of lingerie crafted from the finest materials.
   Whether it's a special night or just a moment for yourself, ignite the flames of passion with lingerie that speaks to your desires.
-  Celebrate your femininity with pieces that accentuate your curves and make you feel absolutely irresistible.</p>
+  Celebrate your femininity with pieces that accentuate your curves and make you feel absolutely irresistible.
+  </p>
+  <p>
+    Bluefemme – where empowerment meets elegance, and confidence intertwines with comfort. We believe that lingerie is more than just a garment, it's the thing closest to your skin; it's an expression of self-love, confidence, and empowerment. Our mission is to redefine the lingerie experience, creating a space where women can embrace their unique beauty and feel empowered from the inside out. Bluefemme is femininity and how you define it. With an unwavering focus on quality, comfort, and inclusivity, we're creating a new era in lingerie.
+  </p>
 </div>
 </template>
 
