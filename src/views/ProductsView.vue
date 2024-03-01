@@ -22,7 +22,7 @@
                   <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
                       R{{ product.amount }}
                   </p>
-                  <router-link :to="{name: 'product', params: {id: product.prodID}}">View More</router-link>
+                  <router-link class="btn buttonPad" :to="{name: 'product', params: {id: product.prodID}}">View More</router-link>
               </template>
           </Card>
       </div>
